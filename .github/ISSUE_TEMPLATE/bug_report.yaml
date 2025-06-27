@@ -1,0 +1,63 @@
+name: 🐞 Bug Report
+description: 프로그램 오류나 버그를 제보해주세요
+labels: ["🐞 BUG", "🧪 TEST"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐞 버그를 제보해주셔서 감사합니다!
+        아래 내용을 작성해주시면 문제 해결에 큰 도움이 됩니다.
+  - type: input
+    id: summary
+    attributes:
+      label: 버그 요약
+      placeholder: 예) 로그인 시 비밀번호 입력해도 실패함
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      description: 버그를 확인할 수 있도록 발생 순서를 자세히 적어주세요
+      placeholder: |
+        1. 로그인 페이지 접속
+        2. 아이디와 비밀번호 입력
+        3. 로그인 버튼 클릭
+        4. 오류 메시지 발생
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 관련 작업 카테고리
+      options:
+        - 🐞 BUG - 기능 오류
+        - 📄 DOCUMENTATION - 문서 수정
+        - 🚀 FEATURE - 신규 기능
+        - 🎨 ENHANCEMENT - 기능 개선
+        - 🧪 TEST - 테스트 관련
+        - ⚙️ SETTING - 설정 및 환경
+        - 🔁 REFACTOR - 코드 리팩토링
+        - 📦 DEPLOY - 배포 관련
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      options:
+        - 🟥 HIGH - 긴급 처리 필요
+        - 🟨 MEDIUM - 일반 중요도
+        - 🟩 LOW - 여유롭게 처리
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작
+      description: 원래 어떤 결과가 나와야 하는지 설명해주세요
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 참고 이미지 (선택)
+      description: 오류 화면이나 콘솔 출력 등을 첨부해주시면 좋아요
