@@ -18,7 +18,7 @@ completion = client.chat.completions.create(
     ],
     #창의력 수치 0~2 사이의 값
     # 0에 가까울수록 보수적이고, 2에 가까울수록 창의적임
-    temperature=0  
-    max_tokens=10  # 최대 토큰 수
+    temperature=1,
+    max_tokens=100  # 최대 토큰 수
 )
 print(completion.choices[0].message.content)
