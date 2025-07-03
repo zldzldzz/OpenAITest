@@ -1,5 +1,9 @@
 from transformers import pipeline
 # 사전 라이브러리
+#가상환경 만들기 py -3.10 -m venv venv310
+# 가상환경 활성화(windows) .\venv310\Scripts\activate
+# 가상환경 활성화(macOS/Linux) source venv310/bin/activate
+# 가상환경 비활성화 deactivate
 #pip install torch transformers protobuf
 
 # Zero-shot 분류 파이프라인 생성
