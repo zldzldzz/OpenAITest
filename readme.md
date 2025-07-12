@@ -80,6 +80,7 @@ que: API 응답 포맷 관련 질문
 | -------------- | ----------------------- |
 | Backend        | Spring Boot             |
 | Database       | MySQL, Redis            |
+| Movie       | TMDB            |
 | AI Integration | OpenAI (GPT API 사용)     |
 | DevOps         | GitHub Actions, AWS EC2 |
 
